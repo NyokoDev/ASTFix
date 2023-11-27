@@ -1,0 +1,31 @@
+version: 1.2.11.{build}
+
+configuration: Release
+
+assembly_info:
+  patch: true
+  file: 'CSL Ambient Sounds Tuner\Properties\AssemblyInfo.cs'
+
+cache:
+  - packages -> **\packages.config
+
+before_build:
+  - ps: .appveyor\UpdateBuildVersion.ps1
+  - nuget restore
+
+build:
+  verbosity: minimal
+
+after_build:
+  - ps: .appveyor\PrepareArtifactsContents.ps1
+
+on_success:
+  - ps: .appveyor\PrepareNewBuildVersion.ps1
+
+artifacts:
+  - path: bin
+    name: AmbientSoundsTuner-v$(appveyor_build_version)
+    type: zip
+  - path: workshop
+    name: AmbientSoundsTuner-workshop-v$(appveyor_build_version)
+    type: zip
