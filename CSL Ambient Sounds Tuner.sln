@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSL Ambient Sounds Tuner", "CSL Ambient Sounds Tuner\CSL Ambient Sounds Tuner.csproj", "{21201B76-8C56-413D-A693-147A7BCACC82}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AlgernonCommonsShared", "..\..\AlgernonCommons\AlgernonCommonsShared.shproj", "{25AEF446-6F0D-43A8-BB84-D1306789B68C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,5 +23,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {409DB085-8A19-4BA2-87CB-980CFD142D21}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\AlgernonCommons\AlgernonCommonsShared.projitems*{21201b76-8c56-413d-a693-147a7bcacc82}*SharedItemsImports = 4
+		..\..\AlgernonCommons\AlgernonCommonsShared.projitems*{25aef446-6f0d-43a8-bb84-d1306789b68c}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

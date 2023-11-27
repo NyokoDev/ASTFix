@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using ColossalFramework.Plugins;
+using UnityEngine;
 
 namespace AmbientSoundsTuner2.CommonShared
 {
@@ -45,7 +46,7 @@ namespace AmbientSoundsTuner2.CommonShared
         /// <param name="message">The log message.</param>
         protected virtual void LogOP(PluginManager.MessageType messageType, string message)
         {
-            DebugOutputPanel.AddMessage(messageType, string.Format("{0} {1}", this.Prefix, message));
+          //Removed unneccesary Output Debug Panel logging
         }
 
         /// <summary>

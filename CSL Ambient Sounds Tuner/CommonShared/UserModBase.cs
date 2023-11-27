@@ -24,7 +24,7 @@ namespace AmbientSoundsTuner2.CommonShared
         /// <value>
         /// The workshop identifier.
         /// </value>
-        protected virtual ulong WorkshopId { get { return 3097179650; } }
+        protected virtual ulong WorkshopId { get { return 0; } }
 
         /// <summary>
         /// Gets the list of incompatible mods.
